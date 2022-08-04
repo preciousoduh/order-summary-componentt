@@ -1,0 +1,191 @@
+*{
+    padding:0;
+    margin:0;;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: HatDisplay-500;
+    src: url(../fonts/RedHatDisplay-Regular.ttf);
+}
+@font-face {
+    font-family:  HatDisplay-700 ;
+    src: url(../fonts/RedHatDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-family:  HatDisplay-900 ;
+    src: url(../fonts/RedHatDisplay-Bold.ttf);
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    
+   
+    
+    
+    
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    
+    
+
+
+}
+.container{
+    width:350px ;
+    height: 500px;
+    border-radius: 10px;
+    margin: 150px auto;
+    border-radius: 10px;
+    background-color: white;
+ 
+   
+
+}
+
+img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+picture img{
+    width: 100%;
+    height: 30%;
+  
+    
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+h1{
+    font-family: HatDisplay-900,sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    position: relative;
+    top:-20px;
+    color: rgb(27,38,59);
+}
+
+.summary-text{
+    text-align: center;
+    font-family: HatDisplay-700;
+    font-size: 16px;
+    padding: ;
+    width: 300px;
+    color:rgb(136,140,151);
+    position: relative;
+    top:-60px;
+   
+}
+.annual-plan-container{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 10px;
+    position: relative;
+    top:-90px;
+    line-height: 25px;
+}
+
+.annual-plan-container img {
+    position: relative;
+    right: 18px;
+}
+
+.annual-plan-container .plan-price {
+    position: relative;
+    right: 25px;
+
+}
+
+.annual-plan{
+    font-family: HatDisplay-700 ;
+    color: rgb(27,38,59);
+}
+
+.price{
+    font-family: HatDisplay-700;
+    color:rgb(136,140,151) ;
+}
+.change {
+    position: relative;
+    left:12px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-family: HatDisplay-700;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.payment{
+    
+    position: relative;
+    top:-120px;
+    
+
+}
+.payment button{
+    width:100% ;
+    height: 45px;
+    padding: 0 5rem;
+    background-color: hsl(245, 75%, 52%);
+    font-family: HatDisplay-900,sans-serif;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    box-shadow: 0 20px 15px rgb(226,221,253);
+
+}
+
+h4 {
+    position: relative;
+    top:-140px;
+    color: rgb(150,158,179);
+    font-family: HatDisplay-900,sans-serif;
+    font-size: 13px;
+}
+
+.change:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.payment button:hover{
+    cursor: pointer;
+    background-color: rgb(118,108,241);
+
+}
+
+h4:hover{
+    cursor: pointer;
+    color: rgb(27,38,59);
+}
+
+@media (max-width: 599px) {
+    .main-container{
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+}
